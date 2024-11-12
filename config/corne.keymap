@@ -77,11 +77,11 @@
 
         symbols_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-                                                  &trans
+&kp GRAVE  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE     &kp  &kp AMPS   &kp BSLH  &kp LBRC  &kp RBRC  &kp        &kp BACKSPACE
+&kp        &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT      &kp  &kp DQT    &kp       &kp LPAR  &kp RPAR  &kp COLON  &kp
+&kp        &kp        &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp          &kp  &kp        &kp       &kp LBKT  &kp RBKT  &kp        &kp
+                      &kp        &kp        &kp         &kp ENTER    &kp  &kp SPACE  &kp       &kp
+                                                                     &kp
             >;
 
             label = "SYM";
