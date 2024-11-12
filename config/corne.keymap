@@ -98,12 +98,12 @@
 
         se_g_equals {
             bindings = <&g_equals>;
-            key-positions = <14 2>;
+            key-positions = <3 15>;
         };
 
         sc_l_equals {
             bindings = <&l_equals>;
-            key-positions = <14 28>;
+            key-positions = <15 29>;
         };
 
         tltr_sleep {
