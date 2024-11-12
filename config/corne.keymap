@@ -1,9 +1,7 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -77,17 +75,17 @@
 
         symbols_layer {
             bindings = <
-&kp GRAVE  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE     &kp  &kp AMPS   &kp BSLH  &kp LBRC  &kp RBRC  &kp        &kp BACKSPACE
-&kp        &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT      &kp  &kp DQT    &kp       &kp LPAR  &kp RPAR  &kp COLON  &kp
-&kp        &kp        &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp          &kp  &kp        &kp       &kp LBKT  &kp RBKT  &kp        &kp
-                      &kp        &kp        &kp         &kp ENTER    &kp  &kp SPACE  &kp       &kp
-                                                                     &kp
+&kp GRAVE  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE     &none  &kp AMPS   &kp BSLH  &kp LBRC  &kp RBRC  &none      &kp BACKSPACE
+&none      &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT      &none  &kp DQT    &none     &kp LPAR  &kp RPAR  &kp COLON  &none
+&none      &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &none        &none  &none      &none     &kp LBKT  &kp RBKT  &none      &none
+                      &none      &none      &none       &kp ENTER    &none  &kp SPACE  &none     &none
+                                                                     &none
             >;
 
             label = "SYM";
         };
 
-        raise_layer {
+        numbers_layer {
             display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
@@ -97,14 +95,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                      &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
-                                                                       &mkp LCLK
+&none    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&none    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &mmv MOVE_DOWN   &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &none
+&kp F11  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &mmv MOVE_LEFT   &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F12
+                   &none   &none     &none     &kp ENTER    &mmv MOVE_RIGHT  &kp SPACE  &none     &none
+                                                            &mkp LCLK
             >;
 
-            label = "SYMBOL";
+            label = "NUM";
             sensor-bindings = <&scroll_encoder>;
         };
 
