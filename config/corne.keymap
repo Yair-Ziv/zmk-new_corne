@@ -214,11 +214,11 @@
 
         k_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp BACKSPACE  &trans  &kp DELETE  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &none          &trans  &none       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans      &trans  &trans
-                &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans
-                                                  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &kp BACKSPACE  &none  &kp DELETE  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none          &none  &none       &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none          &none  &none       &none  &none
+              &none  &none  &none  &none    &none  &none  &none          &none
+                                            &none
             >;
 
             label = "K";
@@ -226,10 +226,10 @@
 
         system_layer {
             bindings = <
-&trans      &out OUT_BLE  &out OUT_USB     &trans        &trans        &trans          &rgb_ug RGB_SPI  &trans           &trans          &trans    &trans      &trans      &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_SPD  &trans           &kp C_PREV      &kp C_PP  &kp C_NEXT  &kp C_STOP  &trans
-&trans      &trans        &trans           &trans        &trans        &trans          &rgb_ug RGB_BRD  &kp PRINTSCREEN  &kp LG(LS(N4))  &trans    &trans      &trans      &trans
-                          &rgb_ug RGB_EFF  &trans        &trans        &trans          &rgb_ug RGB_BRI  &trans           &trans          &trans
+&none       &out OUT_BLE  &out OUT_USB     &none         &none         &none           &rgb_ug RGB_SPI  &none            &none           &none     &none       &none       &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_SPD  &none            &kp C_PREV      &kp C_PP  &kp C_NEXT  &kp C_STOP  &none
+&none       &none         &none            &none         &none         &none           &rgb_ug RGB_BRD  &kp PRINTSCREEN  &kp LG(LS(N4))  &none     &none       &none       &none
+                          &rgb_ug RGB_EFF  &none         &none         &none           &rgb_ug RGB_BRI  &none            &none           &none
                                                                                        &rgb_ug RGB_TOG
             >;
 
