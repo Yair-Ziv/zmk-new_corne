@@ -1,7 +1,9 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -118,14 +120,16 @@
             label = "NAV";
         };
 
-        layer_4 {
+        system_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-                                                  &trans
+&trans      &out OUT_BLE  &out OUT_USB     &trans        &trans        &trans          &rgb_ug RGB_SPI  &trans           &trans          &trans    &trans      &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_SPD  &trans           &kp C_PREV      &kp C_PP  &kp C_NEXT  &kp C_STOP  &trans
+&trans      &trans        &trans           &trans        &trans        &trans          &rgb_ug RGB_BRD  &kp PRINTSCREEN  &kp LG(LS(N4))  &trans    &trans      &trans      &trans
+                          &rgb_ug RGB_EFF  &trans        &trans        &trans          &rgb_ug RGB_BRI  &trans           &trans          &trans
+                                                                                       &rgb_ug RGB_TOG
             >;
+
+            label = "SYS";
         };
 
         layer_5 {
