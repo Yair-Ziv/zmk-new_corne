@@ -212,7 +212,7 @@
             label = "NAV";
         };
 
-        k_layer {
+        i_layer {
             bindings = <
 &none  &none  &none  &none  &none  &none    &none  &none  &kp BACKSPACE  &none  &kp DELETE  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none          &none  &none       &none  &none
@@ -221,7 +221,7 @@
                                             &none
             >;
 
-            label = "K";
+            label = "I";
         };
 
         system_layer {
