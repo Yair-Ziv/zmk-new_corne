@@ -16,8 +16,8 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td_copy_paste'
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: S}
-  - {t: '$$mdi:apple-keyboard-control$$', h: D}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - F
   - G
   - $$mdi:arrow-down-bold$$
