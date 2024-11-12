@@ -19,7 +19,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CAPS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&snake_caps>, <&kp CAPSLOCK>;
+            bindings = <&kp LEFT_SHIFT>, <&d_shift>, <&kp CAPSLOCK>;
         };
 
         snake_caps: snake_caps {
@@ -90,6 +90,26 @@
             bindings = <&snake_caps>;
             key-positions = <5 7>;
         };
+
+        sd_d_equals {
+            bindings = <&d_equals>;
+            key-positions = <15 16>;
+        };
+
+        se_g_equals {
+            bindings = <&g_equals>;
+            key-positions = <14 2>;
+        };
+
+        sc_l_equals {
+            bindings = <&l_equals>;
+            key-positions = <14 28>;
+        };
+
+        tltr_sleep {
+            bindings = <&kp C_SLEEP>;
+            key-positions = <0 12>;
+        };
     };
 
     macros {
@@ -112,6 +132,13 @@
             #binding-cells = <0>;
             bindings = <&kp LT &kp EQUAL>;
             label = "L_EQUALS";
+        };
+
+        d_shift: d_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT &kp LSHFT>;
+            label = "D_SHIFT";
         };
     };
 
