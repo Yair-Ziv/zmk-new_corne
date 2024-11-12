@@ -10,7 +10,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - Y
   - U
-  - {t: I, h: k}
+  - {t: I, h: i}
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  k:
+  i:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
