@@ -73,6 +73,48 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        gh_dash {
+            bindings = <&kp MINUS>;
+            key-positions = <18 20>;
+        };
+
+        bn_underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <31 33>;
+        };
+
+        ty_snake {
+            bindings = <&snake_caps>;
+            key-positions = <5 7>;
+        };
+    };
+
+    macros {
+        d_equals: d_equals {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL>;
+            label = "D_EQUALS";
+        };
+
+        g_equals: g_equals {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp EQUAL>;
+            label = "G_EQUALS";
+        };
+
+        l_equals: l_equals {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp EQUAL>;
+            label = "L_EQUALS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
