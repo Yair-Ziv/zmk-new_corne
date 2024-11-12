@@ -303,9 +303,9 @@ combos:
   k: '&snake_caps'
 - p: [15, 16]
   k: '&d_equals'
-- p: [14, 2]
+- p: [3, 15]
   k: '&g_equals'
-- p: [14, 28]
+- p: [15, 29]
   k: '&l_equals'
 - p: [0, 12]
   k: SLEEP
