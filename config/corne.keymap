@@ -137,10 +137,10 @@
 
         symbols_layer {
             bindings = <
-&kp LG(TAB)  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS       &kp BSLH              &kp LBRC  &kp RBRC  &none      &kp BACKSPACE
-&kp GRAVE    &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT        &kp UNDERSCORE        &kp LPAR  &kp RPAR  &kp COLON  &none
-&none        &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &kp BACKSPACE  &kp LC(SINGLE_QUOTE)  &kp LBKT  &kp RBKT  &none      &none
-                        &none      &none      &none       &none       &none  &kp ENTER      &none                 &none
+&kp LG(TAB)  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS       &kp BSLH          &kp LBRC  &kp RBRC  &none      &kp BACKSPACE
+&kp GRAVE    &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT        &kp UNDERSCORE    &kp LPAR  &kp RPAR  &kp COLON  &none
+&none        &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &none          &kp SINGLE_QUOTE  &kp LBKT  &kp RBKT  &none      &none
+                        &none      &none      &none       &none       &none  &kp BACKSPACE  &kp SPACE         &none
                                                                       &none
             >;
 
@@ -157,11 +157,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&none    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &mmv MOVE_DOWN   &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &none
-&kp F11  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &mmv MOVE_LEFT   &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F12
-                   &none   &none     &none     &kp SPACE    &mmv MOVE_RIGHT  &none      &none     &none
-                                                            &mkp LCLK
+&none    &kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT        &mmv MOVE_UP     &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&none    &kp N1    &kp N2  &kp N3    &kp N4     &kp N5           &mmv MOVE_DOWN   &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &none
+&kp F11  &kp F1    &kp F2  &kp F3    &kp F4     &kp F5           &mmv MOVE_LEFT   &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F12
+                   &none   &none     &kp SPACE  &kp BACKSPACE    &mmv MOVE_RIGHT  &none      &none     &none
+                                                                 &mkp LCLK
             >;
 
             label = "NUM";
