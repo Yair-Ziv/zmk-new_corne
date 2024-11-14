@@ -84,7 +84,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: ',', s: <}
+  - {t: Ctl+ ', s: Ctl+ "}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
