@@ -45,7 +45,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: symbols}
   - {t: '$$mdi:keyboard-tab$$', h: navigation}
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: numbers}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
