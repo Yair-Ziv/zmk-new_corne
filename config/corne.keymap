@@ -124,11 +124,11 @@
             //                                                      enter
 
             bindings = <
-&kp TAB         &kp Q           &kp W       &kp E               &kp R        &kp T              &kp UP_ARROW     &kp Y               &kp U      &lt 4 I      &kp O       &kp P               &kp BSPC
-&td_copy_paste  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D         &kp F        &kp G              &kp DOWN_ARROW   &kp H               &kp J      &mt RCTRL K  &mt RALT L  &mt RIGHT_GUI SEMI  &kp RIGHT_COMMAND
-&td_caps        &kp Z           &kp X       &kp C               &kp V        &kp B              &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA    &kp DOT     &kp FSLH            &kp ESC
-                                &kp SPACE   &lt 5 LEFT_COMMAND  &lt 1 SPACE  &lt 3 BACKSPACE    &kp RIGHT_ARROW  &mt LEFT_SHIFT DEL  &lt 2 RET  &kp RALT
-                                                                                                &kp ENTER
+&kp TAB         &kp Q           &kp W       &kp E               &kp R        &kp T        &kp UP_ARROW     &kp Y               &kp U      &lt 4 I      &kp O       &kp P               &kp BSPC
+&td_copy_paste  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D         &kp F        &kp G        &kp DOWN_ARROW   &kp H               &kp J      &mt RCTRL K  &mt RALT L  &mt RIGHT_GUI SEMI  &kp RIGHT_COMMAND
+&td_caps        &kp Z           &kp X       &kp C               &kp V        &kp B        &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA    &kp DOT     &kp FSLH            &kp ESC
+                                &kp SPACE   &lt 5 LEFT_COMMAND  &lt 1 SPACE  &lt 3 TAB    &kp RIGHT_ARROW  &mt LEFT_SHIFT DEL  &lt 2 RET  &kp RALT
+                                                                                          &kp ENTER
             >;
 
             label = "QWERTY";
