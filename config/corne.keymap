@@ -15,13 +15,6 @@
 
 / {
     behaviors {
-        td_caps: td_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_CAPS";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&d_shift>, <&kp CAPSLOCK>;
-        };
-
         snake_caps: snake_caps {
             compatible = "zmk,behavior-caps-word";
             label = "SNAKE_CAPS";
@@ -88,13 +81,6 @@
     };
 
     macros {
-        d_shift: d_shift {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LSHFT &kp LSHFT>;
-            label = "D_SHIFT";
-        };
-
         s_up: s_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -126,7 +112,7 @@
             bindings = <
 &none           &kp Q           &kp W       &kp E               &kp R        &kp T        &kp UP_ARROW     &kp Y               &kp U      &lt 4 I      &kp O       &kp P               &kp BSPC
 &td_copy_paste  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D         &kp F        &kp G        &kp DOWN_ARROW   &kp H               &kp J      &mt RCTRL K  &mt RALT L  &mt RIGHT_GUI SEMI  &kp RIGHT_COMMAND
-&td_caps        &kp Z           &kp X       &kp C               &kp V        &kp B        &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA    &kp DOT     &kp FSLH            &kp ESC
+&kp LSHIFT      &kp Z           &kp X       &kp C               &kp V        &kp B        &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA    &kp DOT     &kp FSLH            &kp ESC
                                 &kp K_MUTE  &lt 5 LEFT_COMMAND  &lt 1 SPACE  &lt 3 TAB    &kp RIGHT_ARROW  &mt LEFT_SHIFT DEL  &lt 2 RET  &kp RALT
                                                                                           &kp ENTER
             >;
