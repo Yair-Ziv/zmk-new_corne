@@ -76,64 +76,18 @@
     combos {
         compatible = "zmk,combos";
 
-        gh_dash {
-            bindings = <&kp MINUS>;
-            key-positions = <18 20>;
-        };
-
-        bn_underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <31 33>;
-        };
-
         ty_snake {
-            bindings = <&snake_caps>;
+            bindings = <&caps_word>;
             key-positions = <5 7>;
         };
 
-        sd_d_equals {
-            bindings = <&d_equals>;
-            key-positions = <15 16>;
-        };
-
-        se_g_equals {
-            bindings = <&g_equals>;
-            key-positions = <3 15>;
-        };
-
-        sc_l_equals {
-            bindings = <&l_equals>;
-            key-positions = <15 29>;
-        };
-
         tltr_sleep {
-            bindings = <&kp C_SLEEP>;
+            bindings = <&kp K_SLEEP>;
             key-positions = <0 12>;
         };
     };
 
     macros {
-        d_equals: d_equals {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp EQUAL>;
-            label = "D_EQUALS";
-        };
-
-        g_equals: g_equals {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GT &kp EQUAL>;
-            label = "G_EQUALS";
-        };
-
-        l_equals: l_equals {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LT &kp EQUAL>;
-            label = "L_EQUALS";
-        };
-
         d_shift: d_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -170,10 +124,10 @@
             //                                                      enter
 
             bindings = <
-&kp TAB         &kp Q           &kp W       &kp E               &kp R            &kp T          &kp UP_ARROW     &kp Y        &kp U          &lt 4 I      &kp O       &kp P               &kp BSPC
-&td_copy_paste  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D         &kp F            &kp G          &kp DOWN_ARROW   &kp H        &kp J          &mt RCTRL K  &mt RALT L  &mt RIGHT_GUI SEMI  &kp RIGHT_COMMAND
-&td_caps        &kp Z           &kp X       &kp C               &kp V            &kp B          &kp LEFT_ARROW   &kp N        &kp M          &kp COMMA    &kp DOT     &kp FSLH            &kp ESC
-                                &kp SPACE   &lt 5 LEFT_COMMAND  &lt 3 BACKSPACE  &lt 1 SPACE    &kp RIGHT_ARROW  &lt 2 ENTER  &mt RCTRL DEL  &kp RALT
+&kp TAB         &kp Q           &kp W       &kp E               &kp R        &kp T              &kp UP_ARROW     &kp Y               &kp U      &lt 4 I      &kp O       &kp P               &kp BSPC
+&td_copy_paste  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D         &kp F        &kp G              &kp DOWN_ARROW   &kp H               &kp J      &mt RCTRL K  &mt RALT L  &mt RIGHT_GUI SEMI  &kp RIGHT_COMMAND
+&td_caps        &kp Z           &kp X       &kp C               &kp V        &kp B              &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA    &kp DOT     &kp FSLH            &kp ESC
+                                &kp SPACE   &lt 5 LEFT_COMMAND  &lt 1 SPACE  &lt 3 BACKSPACE    &kp RIGHT_ARROW  &mt LEFT_SHIFT DEL  &lt 2 RET  &kp RALT
                                                                                                 &kp ENTER
             >;
 
@@ -183,10 +137,10 @@
 
         symbols_layer {
             bindings = <
-&kp GRAVE  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS   &kp BSLH  &kp LBRC  &kp RBRC  &none      &kp BACKSPACE
-&none      &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT    &none     &kp LPAR  &kp RPAR  &kp COLON  &none
-&none      &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &none       &none  &none      &none     &kp LBKT  &kp RBKT  &none      &none
-                      &none      &none      &none       &none       &none  &kp ENTER  &none     &none
+&kp GRAVE  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS       &kp BSLH        &kp LBRC  &kp RBRC  &none      &kp BACKSPACE
+&none      &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT        &kp UNDERSCORE  &kp LPAR  &kp RPAR  &kp COLON  &none
+&none      &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &kp BACKSPACE  &kp COMMA       &kp LBKT  &kp RBKT  &none      &none
+                      &none      &none      &none       &none       &none  &kp ENTER      &none           &none
                                                                     &none
             >;
 
