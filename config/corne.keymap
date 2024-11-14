@@ -137,10 +137,10 @@
 
         symbols_layer {
             bindings = <
-&kp GRAVE  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS       &kp BSLH        &kp LBRC  &kp RBRC  &none      &kp BACKSPACE
-&none      &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT        &kp UNDERSCORE  &kp LPAR  &kp RPAR  &kp COLON  &none
-&none      &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &kp BACKSPACE  &kp COMMA       &kp LBKT  &kp RBKT  &none      &none
-                      &none      &none      &none       &none       &none  &kp ENTER      &none           &none
+&kp GRAVE  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS       &kp BSLH              &kp LBRC  &kp RBRC  &none      &kp BACKSPACE
+&none      &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT        &kp UNDERSCORE        &kp LPAR  &kp RPAR  &kp COLON  &none
+&none      &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &kp BACKSPACE  &kp LC(SINGLE_QUOTE)  &kp LBKT  &kp RBKT  &none      &none
+                      &none      &none      &none       &none       &none  &kp ENTER      &none                 &none
                                                                     &none
             >;
 
