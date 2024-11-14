@@ -40,7 +40,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-space$$
+  - MUTE
   - {t: '$$mdi:apple-keyboard-command$$', h: system}
   - {t: '$$mdi:keyboard-space$$', h: symbols}
   - {t: '$$mdi:keyboard-tab$$', h: navigation}
