@@ -124,7 +124,7 @@
             //                                                      enter
 
             bindings = <
-&kp TAB         &kp Q           &kp W       &kp E               &kp R        &kp T        &kp UP_ARROW     &kp Y               &kp U      &lt 4 I      &kp O       &kp P               &kp BSPC
+&none           &kp Q           &kp W       &kp E               &kp R        &kp T        &kp UP_ARROW     &kp Y               &kp U      &lt 4 I      &kp O       &kp P               &kp BSPC
 &td_copy_paste  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D         &kp F        &kp G        &kp DOWN_ARROW   &kp H               &kp J      &mt RCTRL K  &mt RALT L  &mt RIGHT_GUI SEMI  &kp RIGHT_COMMAND
 &td_caps        &kp Z           &kp X       &kp C               &kp V        &kp B        &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA    &kp DOT     &kp FSLH            &kp ESC
                                 &kp K_MUTE  &lt 5 LEFT_COMMAND  &lt 1 SPACE  &lt 3 TAB    &kp RIGHT_ARROW  &mt LEFT_SHIFT DEL  &lt 2 RET  &kp RALT
@@ -137,9 +137,9 @@
 
         symbols_layer {
             bindings = <
-&kp LG(TAB)  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS       &kp BSLH          &kp LBRC  &kp RBRC  &none      &kp BACKSPACE
-&kp GRAVE    &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT        &kp UNDERSCORE    &kp LPAR  &kp RPAR  &kp COLON  &none
-&none        &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &none          &kp SINGLE_QUOTE  &kp LBKT  &kp RBKT  &none      &none
+&kp LG(TAB)  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS       &kp BSLH          &kp LBRC  &kp RBRC  &none         &kp BACKSPACE
+&kp GRAVE    &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT        &kp UNDERSCORE    &kp LPAR  &kp RPAR  &kp COLON     &none
+&none        &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &none          &kp SINGLE_QUOTE  &kp LBKT  &kp RBKT  &kp QUESTION  &none
                         &none      &none      &none       &none       &none  &kp BACKSPACE  &kp SPACE         &none
                                                                       &none
             >;
