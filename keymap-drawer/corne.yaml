@@ -27,7 +27,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RIGHT GUI, s: ':'}
   - $$mdi:apple-keyboard-command$$
-  - '&td_caps'
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
