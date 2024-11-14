@@ -50,7 +50,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   symbols:
-  - {t: '`', s: '~'}
+  - Gui+ $$mdi:keyboard-tab$$
   - '~'
   - <
   - '>'
@@ -63,7 +63,7 @@ layers:
   - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - $$mdi:keyboard-esc$$
   - {t: '-', s: _}
   - +
