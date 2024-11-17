@@ -144,7 +144,7 @@
 
             bindings = <
 &none      &kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT        &mmv MOVE_UP     &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp COLON  &kp N1    &kp N2  &kp N3    &kp N4     &kp N5           &mmv MOVE_DOWN   &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &none
+&kp COLON  &kp N1    &kp N2  &kp N3    &kp N4     &kp N5           &mmv MOVE_DOWN   &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp F11    &kp F1    &kp F2  &kp F3    &kp F4     &kp F5           &mmv MOVE_LEFT   &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F12
                      &none   &none     &kp SPACE  &kp BACKSPACE    &mmv MOVE_RIGHT  &none      &none     &none
                                                                    &mkp LCLK
