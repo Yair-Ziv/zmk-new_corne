@@ -296,6 +296,6 @@ layers:
   - RGB TOG
 combos:
 - p: [5, 7]
-  k: '&snake_caps'
+  k: $$mdi:alpha-w-box$$
 - p: [0, 12]
   k: SLEEP
