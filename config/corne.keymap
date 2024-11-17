@@ -19,7 +19,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "SNAKE_CAPS";
             #binding-cells = <0>;
-            continue-list = <MINUS UNDERSCORE DELETE BACKSPACE>;
+            continue-list = <UNDER DOT MINUS DEL BACKSPACE>;
         };
 
         td_copy_paste: td_copy_paste {
@@ -70,7 +70,7 @@
         compatible = "zmk,combos";
 
         ty_snake {
-            bindings = <&caps_word>;
+            bindings = <&snake_caps>;
             key-positions = <5 7>;
         };
 
