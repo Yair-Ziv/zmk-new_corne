@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  default:
+  QWERTY:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Q
   - W
@@ -10,7 +10,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - Y
   - U
-  - {t: I, h: i}
+  - {t: I, h: I}
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -41,15 +41,15 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - MUTE
-  - {t: '$$mdi:apple-keyboard-command$$', h: system}
-  - {t: '$$mdi:keyboard-space$$', h: symbols}
-  - {t: '$$mdi:keyboard-tab$$', h: navigation}
+  - {t: '$$mdi:apple-keyboard-command$$', h: SYS}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-tab$$', h: NAV}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: numbers}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  symbols:
+  SYM:
   - Gui+ $$mdi:keyboard-tab$$
   - '~'
   - <
@@ -98,7 +98,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  numbers:
+  NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
   - '@'
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
-  navigation:
+  NAV:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
@@ -196,7 +196,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  i:
+  I:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  system:
+  SYS:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT BLE
   - OUT USB
@@ -296,6 +296,6 @@ layers:
   - RGB TOG
 combos:
 - p: [5, 7]
-  k: $$mdi:alpha-w-box$$
+  k: '&snake_caps'
 - p: [0, 12]
   k: SLEEP
