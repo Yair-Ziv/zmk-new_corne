@@ -70,7 +70,7 @@
         compatible = "zmk,combos";
 
         ty_snake {
-            bindings = <&snake_caps>;
+            bindings = <&caps_word>;
             key-positions = <5 7>;
         };
 
