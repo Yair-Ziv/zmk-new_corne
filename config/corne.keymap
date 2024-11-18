@@ -38,6 +38,13 @@
             tapping-term-ms = <200>;
         };
 
+        td_d_backspace: td_d_backspace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_D_BACKSPACE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <900>;    // 40
@@ -110,10 +117,10 @@
             //                                                      enter
 
             bindings = <
-&none       &kp Q           &kp W       &kp E               &kp R        &kp T        &kp UP_ARROW     &kp Y               &kp U      &lt 4 I      &kp O       &kp P               &kp BSPC
+&none       &kp Q           &kp W       &kp E               &kp R        &kp T        &kp UP_ARROW     &kp Y               &kp U      &kp I        &kp O       &kp P               &kp BSPC
 &none       &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D         &kp F        &kp G        &kp DOWN_ARROW   &kp H               &kp J      &mt RCTRL K  &mt RALT L  &mt RIGHT_GUI SEMI  &kp SINGLE_QUOTE
 &kp LSHIFT  &kp Z           &kp X       &kp C               &kp V        &kp B        &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA    &kp DOT     &kp FSLH            &kp ESC
-                            &kp K_MUTE  &lt 5 LEFT_COMMAND  &lt 1 SPACE  &lt 3 TAB    &kp RIGHT_ARROW  &mt LEFT_SHIFT ESC  &lt 2 RET  &kp RALT
+                            &kp K_MUTE  &lt 4 LEFT_COMMAND  &lt 1 SPACE  &lt 3 TAB    &kp RIGHT_ARROW  &mt LEFT_SHIFT ESC  &lt 2 RET  &kp RALT
                                                                                       &kp ENTER
             >;
 
@@ -123,10 +130,10 @@
 
         symbols_layer {
             bindings = <
-&kp LG(TAB)  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS       &kp BSLH          &kp LBRC  &kp RBRC  &none         &kp BACKSPACE
-&kp GRAVE    &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT        &kp UNDERSCORE    &kp LPAR  &kp RPAR  &kp COLON     &none
-&none        &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &none          &kp SINGLE_QUOTE  &kp LBKT  &kp RBKT  &kp QUESTION  &none
-                        &none      &none      &none       &none       &none  &kp BACKSPACE  &kp SPACE         &none
+&kp LG(TAB)  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS         &kp BSLH          &kp LBRC  &kp RBRC  &none         &kp BACKSPACE
+&kp GRAVE    &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT          &kp UNDERSCORE    &kp LPAR  &kp RPAR  &kp COLON     &none
+&none        &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &none            &kp SINGLE_QUOTE  &kp LBKT  &kp RBKT  &kp QUESTION  &none
+                        &none      &none      &none       &none       &none  &td_d_backspace  &kp SPACE         &none
                                                                       &none
             >;
 
@@ -143,11 +150,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none      &kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT        &mmv MOVE_UP     &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp COLON  &kp N1    &kp N2  &kp N3    &kp N4     &kp N5           &mmv MOVE_DOWN   &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp F11    &kp F1    &kp F2  &kp F3    &kp F4     &kp F5           &mmv MOVE_LEFT   &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F12
-                     &none   &none     &kp SPACE  &kp BACKSPACE    &mmv MOVE_RIGHT  &none      &none     &none
-                                                                   &mkp LCLK
+&none      &kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT          &mmv MOVE_UP     &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp COLON  &kp N1    &kp N2  &kp N3    &kp N4     &kp N5             &mmv MOVE_DOWN   &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp F11    &kp F1    &kp F2  &kp F3    &kp F4     &kp F5             &mmv MOVE_LEFT   &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F12
+                     &none   &none     &kp SPACE  &td_d_backspace    &mmv MOVE_RIGHT  &none      &none     &none
+                                                                     &mkp LCLK
             >;
 
             label = "NUM";
@@ -164,18 +171,6 @@
             >;
 
             label = "NAV";
-        };
-
-        i_layer {
-            bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &kp BACKSPACE  &none  &kp DELETE  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none          &none  &none       &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none          &none  &none       &none  &none
-              &none  &none  &none  &none    &none  &none  &none          &none
-                                            &none
-            >;
-
-            label = "I";
         };
 
         system_layer {
