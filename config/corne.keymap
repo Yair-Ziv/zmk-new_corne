@@ -117,9 +117,9 @@
             //                                                      enter
 
             bindings = <
-&none       &kp Q           &kp W       &kp E               &kp R        &kp T        &kp UP_ARROW     &kp Y               &kp U      &kp I        &kp O       &kp P               &kp BSPC
-&none       &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D         &kp F        &kp G        &kp DOWN_ARROW   &kp H               &kp J      &mt RCTRL K  &mt RALT L  &mt RIGHT_GUI SEMI  &kp SINGLE_QUOTE
-&kp LSHIFT  &kp Z           &kp X       &kp C               &kp V        &kp B        &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA    &kp DOT     &kp FSLH            &kp ESC
+&none       &kp Q           &kp W       &kp E               &kp R        &kp T        &kp UP_ARROW     &kp Y               &kp U      &kp I        &kp O       &kp P               &none
+&none       &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D         &kp F        &kp G        &kp DOWN_ARROW   &kp H               &kp J      &mt RCTRL K  &mt RALT L  &mt RIGHT_GUI SEMI  &kp LS(RET)
+&kp LSHIFT  &kp Z           &kp X       &kp C               &kp V        &kp B        &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA    &kp DOT     &kp FSLH            &none
                             &kp K_MUTE  &lt 4 LEFT_COMMAND  &lt 1 SPACE  &lt 3 TAB    &kp RIGHT_ARROW  &mt LEFT_SHIFT ESC  &lt 2 RET  &kp RALT
                                                                                       &kp ENTER
             >;
@@ -130,11 +130,11 @@
 
         symbols_layer {
             bindings = <
-&kp LG(TAB)  &kp TILDE  &kp LT     &kp GT     &kp CARET   &kp PIPE    &none  &kp AMPS         &kp BSLH          &kp LBRC  &kp RBRC  &none         &kp BACKSPACE
-&kp GRAVE    &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL   &kp SQT     &none  &kp DQT          &kp UNDERSCORE    &kp LPAR  &kp RPAR  &kp COLON     &none
-&none        &none      &kp SLASH  &kp ASTRK  &kp DOLLAR  &kp DEL     &none  &none            &kp SINGLE_QUOTE  &kp LBKT  &kp RBKT  &kp QUESTION  &none
-                        &none      &none      &none       &none       &none  &td_d_backspace  &kp SPACE         &none
-                                                                      &none
+&none  &kp TILDE  &kp LT     &kp GT     &kp BSLH   &kp PIPE    &none  &kp AMPS         &kp CARET       &kp LBRC  &kp RBRC  &none         &none
+&none  &kp GRAVE  &kp MINUS  &kp PLUS   &kp EQUAL  &kp SQT     &none  &kp DQT          &kp UNDERSCORE  &kp LPAR  &kp RPAR  &kp COLON     &none
+&none  &none      &kp SLASH  &kp ASTRK  &kp DEL    &none       &none  &none            &kp LS(RET)     &kp LBKT  &kp RBKT  &kp QUESTION  &none
+                  &none      &none      &none      &none       &none  &td_d_backspace  &kp SPACE       &none
+                                                               &none
             >;
 
             label = "SYM";
