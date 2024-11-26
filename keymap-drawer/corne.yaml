@@ -18,11 +18,11 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - F
+  - {t: F, h: 'Alt+Ctl+ $$mdi:apple-keyboard-command$$'}
   - G
   - $$mdi:arrow-down-bold$$
   - H
-  - J
+  - {t: J, h: 'Alt+Ctl+ $$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RIGHT GUI, s: ':'}
