@@ -45,9 +45,9 @@
             bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
         };
 
-        hml: hml {
+        hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
-            label = "HML";
+            label = "HMR";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -59,9 +59,9 @@
             hold-trigger-key-positions = <46 45 44 42 41 40 31 18 5 4 3 2 1 0 13 26 27 14 15 29 16 17 30 28>;
         };
 
-        hmr: hmr {
+        hml: hml {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
+            label = "HML";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
