@@ -109,14 +109,9 @@
             key-positions = <5 7>;
         };
 
-        tltr_sleep {
-            bindings = <&kp K_SLEEP>;
-            key-positions = <0 12>;
-        };
-
         gaming_toggle {
             bindings = <&tog 5>;
-            key-positions = <18 20>;
+            key-positions = <0 12>;
         };
     };
 
