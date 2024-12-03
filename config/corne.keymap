@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
-  
+
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 #define U_MS_U &mmv MOVE_UP
@@ -113,6 +113,11 @@
             bindings = <&kp K_SLEEP>;
             key-positions = <0 12>;
         };
+
+        gaming_toggle {
+            bindings = <&tog 5>;
+            key-positions = <18 20>;
+        };
     };
 
     macros {
@@ -207,6 +212,19 @@
             >;
 
             label = "SYS";
+        };
+
+        gaming_layer {
+            label = "GAME";
+            bindings = <
+&none       &kp Q  &kp W       &kp E               &kp R        &kp T        &kp UP_ARROW     &kp Y               &kp U      &kp I      &kp O    &kp P     &none
+&none       &kp A  &kp S       &kp D               &kp F        &kp G        &kp DOWN_ARROW   &kp H               &kp J      &kp K      &kp L    &kp SEMI  &kp LS(RET)
+&kp LSHIFT  &kp Z  &kp X       &kp C               &kp V        &kp B        &kp LEFT_ARROW   &kp N               &kp M      &kp COMMA  &kp DOT  &kp FSLH  &none
+                   &kp K_MUTE  &lt 4 LEFT_COMMAND  &lt 1 SPACE  &lt 3 TAB    &kp RIGHT_ARROW  &mt LEFT_SHIFT ESC  &lt 2 RET  &kp RALT
+                                                                             &kp ENTER
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
