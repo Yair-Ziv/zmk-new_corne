@@ -298,6 +298,4 @@ combos:
 - p: [5, 7]
   k: $$mdi:alpha-w-box$$
 - p: [0, 12]
-  k: SLEEP
-- p: [18, 20]
   k: {t: GAME, h: toggle}
