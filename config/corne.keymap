@@ -13,6 +13,7 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
+
 / {
     behaviors {
         snake_caps: snake_caps {
