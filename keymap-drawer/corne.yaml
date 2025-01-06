@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   QWERTY:
-  - {t: Gui+ `, s: Gui+ ~}
+  - {t: Gui+`, s: Gui+~}
   - Q
   - W
   - E
@@ -14,19 +14,19 @@ layers:
   - O
   - P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+ $$mdi:keyboard-space$$
+  - Ctl+$$mdi:keyboard-space$$
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: 'Alt+Ctl+ $$mdi:apple-keyboard-command$$'}
+  - {t: F, h: 'Alt+Ctl+$$mdi:apple-keyboard-command$$'}
   - G
   - $$mdi:arrow-down-bold$$
   - H
-  - {t: J, h: 'Alt+Ctl+ $$mdi:apple-keyboard-command$$'}
+  - {t: J, h: 'Alt+Ctl+$$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RIGHT GUI, s: ':'}
-  - {t: 'Sft+ $$mdi:keyboard-return$$', type: enter}
+  - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -84,7 +84,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: 'Sft+ $$mdi:keyboard-return$$', type: enter}
+  - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - '?'
@@ -109,7 +109,7 @@ layers:
   - ^
   - '&'
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: 'Alt+ $$mdi:backspace$$', type: backspace}
+  - {t: 'Alt+$$mdi:backspace$$', type: backspace}
   - .
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - ':'
@@ -231,7 +231,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB BRD
   - PRINTSCREEN
-  - {t: Gui+Sft+ 4, s: Gui+Sft+ $}
+  - {t: Gui+Sft+4, s: Gui+Sft+$}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -271,7 +271,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: 'Sft+ $$mdi:keyboard-return$$', type: enter}
+  - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
