@@ -316,7 +316,7 @@ layers:
   - {t: 'Alt+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
-  - F4
+  - {t: F4, h: '$$mdi:apple-keyboard-shift$$'}
   - F5
   - F6
   - F11
