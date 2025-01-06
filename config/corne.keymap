@@ -177,11 +177,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none      &none   &kp N1  &kp N2  &kp N3     &none            &mmv MOVE_UP     &none  &kp F1              &kp F2  &kp F3  &kp F10  &none
-&kp COLON  &kp N0  &kp N4  &kp N5  &kp N6     &none            &mmv MOVE_DOWN   &none  &hmr LEFT_SHIFT F4  &kp F5  &kp F6  &kp F11  &kp MINUS
-&none      &none   &kp N7  &kp N8  &kp N9     &none            &mmv MOVE_LEFT   &none  &kp F7              &kp F8  &kp F9  &kp F12  &none
-                   &none   &none   &kp SPACE  &kp BACKSPACE    &mmv MOVE_RIGHT  &none  &none               &none
-                                                               &mkp LCLK
+&none      &kp MINUS  &kp N1  &kp N2  &kp N3     &kp PLUS             &mmv MOVE_UP     &none      &kp F1              &kp F2  &kp F3  &kp F10  &none
+&kp COLON  &kp N0     &kp N4  &kp N5  &kp N6     &kp LA(BACKSPACE)    &mmv MOVE_DOWN   &kp EQUAL  &hmr LEFT_SHIFT F4  &kp F5  &kp F6  &kp F11  &kp MINUS
+&none      &kp FSLH   &kp N7  &kp N8  &kp N9     &kp ASTERISK         &mmv MOVE_LEFT   &none      &kp F7              &kp F8  &kp F9  &kp F12  &none
+                      &none   &none   &kp SPACE  &kp BACKSPACE        &mmv MOVE_RIGHT  &none      &none               &none
+                                                                      &mkp LCLK
             >;
 
             label = "NUM";
