@@ -124,7 +124,7 @@ layers:
   - F5
   - F6
   - F11
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - ':'
   - {t: ',', s: <}
   - {t: /, s: '?'}
   - {t: '7', s: '&'}
