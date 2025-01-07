@@ -4,6 +4,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -147,7 +150,7 @@
 &kp LG(GRAVE)  &kp Q            &kp W        &kp E               &kp R                    &kp T        &kp UP_ARROW     &kp Y               &kp U                    &kp I         &kp O        &kp P                &none
 &kp LC(SPACE)  &hml LEFT_GUI A  &hml LALT S  &hml LCTRL D        &hml LA(LC(LEFT_GUI)) F  &kp G        &kp DOWN_ARROW   &kp H               &hmr LA(LC(LEFT_GUI)) J  &hmr RCTRL K  &hmr RALT L  &hmr RIGHT_GUI SEMI  &kp LS(RET)
 &kp LSHIFT     &kp Z            &kp X        &kp C               &kp V                    &kp B        &kp LEFT_ARROW   &kp N               &kp M                    &kp COMMA     &kp DOT      &kp FSLH             &none
-                                &kp K_MUTE   &lt 4 LEFT_COMMAND  &lt 1 SPACE              &lt 3 TAB    &kp RIGHT_ARROW  &mt LEFT_SHIFT ESC  &lt 2 RET                &kp RALT
+                                &kp K_MUTE   &lt 4 LEFT_COMMAND  &lt 1 SPACE              &lt 3 TAB    &kp RIGHT_ARROW  &mt LEFT_SHIFT ESC  &lt 6 RET                &kp RALT
                                                                                                        &kp ENTER
             >;
 
@@ -225,10 +228,10 @@
 
         layer_6 {
             bindings = <
-&trans  &kp MINUS  &kp COMMA  &kp N2  &kp N3  &kp PLUS             &kp EQUAL  &trans     &kp F1          &kp F2  &kp F3  &kp F10  &trans
-&trans  &kp N0     &kp N4     &kp N5  &kp N6  &kp LA(BACKSPACE)    &trans     &kp EQUAL  &hmr LSHIFT F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &kp FSLH   &kp N7     &kp N8  &kp N9  &kp ASTERISK         &kp N8     &trans     &kp F7          &kp F8  &kp F9  &kp F12  &trans
-                   &trans     &trans  &trans  &trans               &trans     &trans     &trans          &trans
+&trans     &kp MINUS  &kp N1  &kp N2  &kp N3  &kp PLUS             &none   &kp GREATER_THAN  &kp F1          &kp F2  &kp F3  &kp F10  &trans
+&kp DOT    &kp N0     &kp N4  &kp N5  &kp N6  &kp LA(BACKSPACE)    &trans  &kp EQUAL         &hmr LSHIFT F4  &kp F5  &kp F6  &kp F11  &trans
+&kp COMMA  &kp FSLH   &kp N7  &kp N8  &kp N9  &kp ASTERISK         &none   &kp LT            &kp F7          &kp F8  &kp F9  &kp F12  &trans
+                      &trans  &trans  &trans  &trans               &trans  &trans            &trans          &trans
                                                                    &trans
             >;
         };
