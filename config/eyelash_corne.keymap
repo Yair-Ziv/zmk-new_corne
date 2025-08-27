@@ -63,7 +63,7 @@
         quick-tap-ms = <175>;
         require-prior-idle-ms = <150>;
         hold-trigger-on-release;
-        hold-trigger-key-positions = <46 45 44 42 41 40 31 18 5 4 3 2 1 0 13 26 27 14 15 29 16 17 30 28>;
+        hold-trigger-key-positions = <46 45 44 42 31 18 5 4 3 2 1 0 13 14 15 29 16 17 30 28 47 43 33 32>;
     };
 
     hml: hml {
@@ -77,9 +77,8 @@
         quick-tap-ms = <175>;
         require-prior-idle-ms = <150>;
         hold-trigger-on-release;
-        hold-trigger-key-positions = <46 45 44 42 41 40 7 20 33 34 21 8 9 22 35 36 23 10 11 24 37 38 25 12>;
+        hold-trigger-key-positions = <46 45 44 42 41 40 7 8 9 22 36 23 10 11 24 37 38 25 12 43 47 39 26 27>;
     };
-
 
     combos {
         compatible = "zmk,combos";
