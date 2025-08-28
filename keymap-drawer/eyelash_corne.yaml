@@ -43,11 +43,11 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - '&td_copy_paste'
-  - {t: '$$mdi:apple-keyboard-command$$', h: '4'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: QWERTY}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
-  - {t: '$$mdi:keyboard-tab$$', h: Fn}
+  - {t: '$$mdi:keyboard-tab$$', h: QWERTY}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-return$$', h: QWERTY}
   - $$mdi:apple-keyboard-option$$
   SYM:
   - {t: '`', s: '~'}
@@ -98,115 +98,82 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  SYMBOL:
+  NUM:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:bluetooth-off$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: \, s: '|'}
-  - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
-  - OUT BLE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB5'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - _
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
-  - '&studio_unlock'
+  - '>'
   - F1
   - F2
   - F3
+  - F10
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ., s: '>'}
+  - {t: '0', s: )}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: 'Alt+$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
   - F4
   - F5
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
+  - F11
+  - ':'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, s: '?'}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - '*'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - <
   - F7
   - F8
   - F9
-  - F10
-  - F11
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:progress-download$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - PRINTSCREEN
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
-  - $$mdi:volume-off$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - SCROLLLOCK
-  - PAUSE BREAK
+  NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - $$mdi:volume-low$$
+  - MUTE
+  - $$mdi:volume-high$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '4':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - PG DN
+  - PG UP
+  - HOME
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -229,7 +196,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  SYS:
   - {t: '$$mdi:transfer$$', type: trans}
+  - OUT BLE
+  - OUT USB
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -239,13 +209,21 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:bluetooth-off$$
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '5':
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - STOP
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -256,34 +234,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Sft+4
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
