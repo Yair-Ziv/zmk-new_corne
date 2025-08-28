@@ -2,5 +2,5 @@ if you  need the 3D modle of this  keyboard，you can  connect me by Email。380
 # zmk-config-corne
 
 
-<img src="keymap-drawer/corne.svg" >
+<img src="./keymap-drawer/eyelash_corne.svg" >
 
