@@ -248,3 +248,5 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
+- p: [5, 7]
+  k: $$mdi:alpha-w-box$$
