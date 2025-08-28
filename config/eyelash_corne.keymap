@@ -30,11 +30,11 @@
 
 / {
     behaviors {
-        td0: td0 {
+        td_copy_paste: td_copy_paste {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
+            label = "TD_COPY_PASTE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp RG(C)>, <&kp RG(V)>;
         };
     };
 
@@ -95,13 +95,14 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp LG(GRAVE)  &kp Q        &kp W        &kp E               &kp R                &kp T                             &kp UP                &kp Y               &kp U                &kp I         &kp O        &kp P           &kp BSPC
+&kp LC(SPACE)  &hml LGUI A  &hml LALT S  &hml LCTRL D        &hml LA(LC(LGUI)) F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H               &hmr LA(LC(LGUI)) J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp LS(RETURN)
+&kp LSHIFT     &kp Z        &kp X        &kp C               &kp V                &kp B      &kp SPACE              &kp DOWN              &kp N               &kp M                &kp COMMA     &kp DOT      &kp FSLH        &td_copy_paste
+                                         &lt 4 LEFT_COMMAND  &lt 1 SPACE          &lt 3 TAB                                               &mt LEFT_SHIFT ESC  &lt 2 RET            &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            label = "QWERTY";
         };
 
         lower_layer {
@@ -138,6 +139,24 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
