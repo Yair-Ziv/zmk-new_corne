@@ -136,7 +136,7 @@
 
         navigation_layer {
             bindings = <
-&trans  &trans     &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &trans                    &trans          &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans     &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &trans                    &trans          &trans    &trans    &trans  &trans     &trans  &trans
 &trans  &kp PG_DN  &kp PG_UP          &kp HOME    &kp END          &trans            &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
 &trans  &trans     &trans             &trans      &trans           &trans  &trans            &trans          &trans    &trans    &trans  &trans     &trans  &trans
                                       &trans      &trans           &trans                                    &trans    &trans    &trans
