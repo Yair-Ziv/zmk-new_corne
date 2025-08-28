@@ -87,6 +87,11 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+        ty_caps {
+            bindings = <&caps_word>;
+            key-positions = <5 7>;
+        };
     };
 
     keymap {
