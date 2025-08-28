@@ -98,14 +98,14 @@
 &kp LG(GRAVE)  &kp Q        &kp W        &kp E               &kp R                &kp T                             &kp UP                &kp Y               &kp U                &kp I         &kp O        &kp P           &kp BSPC
 &kp LC(SPACE)  &hml LGUI A  &hml LALT S  &hml LCTRL D        &hml LA(LC(LGUI)) F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H               &hmr LA(LC(LGUI)) J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp LS(RETURN)
 &kp LSHIFT     &kp Z        &kp X        &kp C               &kp V                &kp B      &kp SPACE              &kp DOWN              &kp N               &kp M                &kp COMMA     &kp DOT      &kp FSLH        &td_copy_paste
-                                         &lt 4 LEFT_COMMAND  &lt 1 SPACE          &lt 3 TAB                                               &mt LEFT_SHIFT ESC  &lt 2 RET            &kp RALT
+                                         &lt 0 LEFT_COMMAND  &lt 1 SPACE          &lt 0 TAB                                               &mt LEFT_SHIFT ESC  &lt 0 RET            &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
             label = "QWERTY";
         };
 
-        synbols_layer {
+        symbols_layer {
             display-name = "NUMBER";
             bindings = <
 &kp GRAVE  &kp TILDE  &kp LT     &kp GT     &kp BSLH   &kp PIPE                                &mmv MOVE_UP                     &kp AMPS         &kp CARET    &kp LBRC  &kp RBRC  &kp DLLR   &trans
@@ -118,46 +118,37 @@
             label = "SYM";
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        numbers_layer {
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&trans   &kp MINUS  &kp N1  &kp N2  &kp N3     &kp PLUS                        &trans          &kp GREATER_THAN  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&kp DOT  &kp N0     &kp N4  &kp N5  &kp N6     &kp LA(BSPC)            &trans  &trans  &trans  &kp EQUAL         &kp F4  &kp F5  &kp F6  &kp F11  &kp COLON
+&trans   &kp FSLH   &kp N7  &kp N8  &kp N9     &kp ASTERISK  &trans            &trans          &kp LESS_THAN     &kp F7  &kp F8  &kp F9  &kp F12  &trans
+                            &trans  &kp SPACE  &kp BSPC                                        &trans            &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            label = "NUM";
         };
 
-        layer_3 {
-            display-name = "Fn";
+        navigation_layer {
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&trans  &trans     &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &trans                    &trans          &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &kp PG_DN  &kp PG_UP          &kp HOME    &kp END          &trans            &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans     &trans             &trans      &trans           &trans  &trans            &trans          &trans    &trans    &trans  &trans     &trans  &trans
+                                      &trans      &trans           &trans                                    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            label = "NAV";
         };
 
-        layer_4 {
+        system_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans      &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans                          &trans          &trans  &trans                &trans    &trans      &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans  &kp C_PREV            &kp C_PP  &kp C_NEXT  &kp C_STOP  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans            &trans          &trans  &kp LG(LS(NUMBER_4))  &trans    &trans      &trans      &trans
+                                        &trans        &trans        &trans                                          &trans  &trans                &trans
             >;
-        };
 
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
+            label = "SYS";
         };
     };
 };
