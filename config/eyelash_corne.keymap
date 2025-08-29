@@ -125,10 +125,10 @@
 
         numbers_layer {
             bindings = <
-&trans   &kp MINUS  &kp N1  &kp N2  &kp N3     &kp PLUS                        &trans          &kp GREATER_THAN  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-&kp DOT  &kp N0     &kp N4  &kp N5  &kp N6     &kp LA(BSPC)            &trans  &trans  &trans  &kp EQUAL         &kp F4  &kp F5  &kp F6  &kp F11  &kp COLON
-&trans   &kp FSLH   &kp N7  &kp N8  &kp N9     &kp ASTERISK  &trans            &trans          &kp LESS_THAN     &kp F7  &kp F8  &kp F9  &kp F12  &trans
-                            &trans  &kp SPACE  &kp BSPC                                        &trans            &trans  &trans
+&trans     &kp MINUS  &kp N1  &kp N2  &kp N3     &kp PLUS                        &trans          &kp GREATER_THAN  &kp F1          &kp F2  &kp F3  &kp F10  &trans
+&kp DOT    &kp N0     &kp N4  &kp N5  &kp N6     &kp LA(BSPC)            &trans  &trans  &trans  &kp EQUAL         &hmr RSHIFT F4  &kp F5  &kp F6  &kp F11  &kp COLON
+&kp COMMA  &kp FSLH   &kp N7  &kp N8  &kp N9     &kp ASTERISK  &trans            &trans          &kp LESS_THAN     &kp F7          &kp F8  &kp F9  &kp F12  &trans
+                              &trans  &kp SPACE  &kp BSPC                                        &trans            &trans          &trans
             >;
 
             label = "NUM";
