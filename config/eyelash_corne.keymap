@@ -111,7 +111,6 @@
         };
 
         symbols_layer {
-            display-name = "NUMBER";
             bindings = <
 &kp GRAVE  &kp TILDE  &kp LT     &kp GT     &kp BSLH   &kp PIPE                                &mmv MOVE_UP                     &kp AMPS         &kp CARET    &kp LBRC  &kp RBRC  &kp DLLR   &trans
 &none      &kp EXCL   &kp MINUS  &kp PLUS   &kp EQUAL  &kp SQT                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp DQT          &kp UNDER    &kp LPAR  &kp RPAR  &kp COLON  &none
