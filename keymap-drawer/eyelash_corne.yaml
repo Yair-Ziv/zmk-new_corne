@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: NAV}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - $$mdi:apple-keyboard-option$$
+  - '&td_copy_paste'
   SYM:
   - {t: '`', s: '~'}
   - '~'
